@@ -3,6 +3,7 @@
 ## Description  
 - This project is a back end architecture for an e-commerce site
 - It was built using an Express.js API, [Sequelize](https://sequelize.org/), and a MySQL database.
+- The app is deployed to heroku [e-comm-bd](https://e-comm-bd.herokuapp.com/)
 
 
 ## Table of Contents 
@@ -20,11 +21,8 @@ To install this application:
 ## Usage    
 To use this application:
 1. Run `node server.js` on your Node.js terminal
-2. Open your browser to http://localhost:${PORT}
-
-
-A walkthrough video is included below: 
-[Link](url)
+2. Open [e-comm-bd](https://e-comm-bd.herokuapp.com/) on your browser
+3. Visit the `/api/tags` `/api/categories` `/api/products` endpoints to test all the CRUD routes
 
 
 ## License  
