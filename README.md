@@ -7,22 +7,15 @@
 
 
 ## Table of Contents 
-- [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)  ![GitHub](https://img.shields.io/github/license/bdibil/E-Commerce-Back-End)
 - [Questions](#Questions)
 
-## Installation  
-To install this application:
-1. Clone this repo 
-2. Open your Node.js terminal in the project's path   
-3. Enter `npm i` in the terminal to install dependencies
 
 ## Usage    
 To use this application:
-1. Run `node server.js` on your Node.js terminal
-2. Open [e-comm-bd](https://e-comm-bd.herokuapp.com/) on your browser
-3. Visit the `/api/tags` `/api/categories` `/api/products` endpoints to test all the CRUD routes
+1. Open [e-comm-bd](https://e-comm-bd.herokuapp.com/) on your browser
+2. Visit the `/api/tags` `/api/categories` `/api/products` endpoints to test all the CRUD routes
 
 
 ## License  
