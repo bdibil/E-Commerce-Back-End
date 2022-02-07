@@ -3,8 +3,16 @@ const apiRoutes = require('./api');
 
 router.use('/api', apiRoutes);
 
+
+// app.use(express.static('public'));
+
+
 router.use((req, res) => {
-  res.send("<h1>Wrong Route!</h1>")
+  res.send('<br> <h1 style="text-align: center;">Welcome to the E-Commerce Back End !</h1>')
 });
+
+// router.use((req, res) => {
+//   res.sendFile(path.join(__dirname, 'public/index.html'))
+// });
 
 module.exports = router;
