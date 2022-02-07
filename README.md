@@ -2,7 +2,7 @@
   
 ## Description  
 - This project is a back end architecture for an e-commerce site
-- It was built using an Express.js API, Sequelize, and a MySQL database.
+- It was built using an Express.js API, [Sequelize](https://sequelize.org/), and a MySQL database.
 
 
 ## Table of Contents 
@@ -21,8 +21,9 @@ To install this application:
 
 ## Usage    
 To use this application:
-1. Run `node index.js` on your Node.js terminal
-2. Respond to the command-line application with information about your project
+1. Run `node server.js` on your Node.js terminal
+2. Open your browser to http://localhost:${PORT}
+
 
 A walkthrough video is included below: 
 [Link](url)
