@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
 
   try {
     const getCategories = await Category.findAll({
-      include: [{ model: Product }],
+      include: [Product]
     });
     res.status(200).json(getCategories);
   } catch (err) {
@@ -22,7 +22,7 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
 
   try {
-    const getCategories = await Category.findByPk(req.params.id, {include: [{ model: Product }], });
+    const getCategories = await Category.findByPk(req.params.id, {include: [Product] });
     if (!getCategories) {
       res.status(404).json({message: 'No such Product ID was found!'});
       return;
@@ -47,25 +47,24 @@ router.post('/', async (req, res) => {
     res.status(400).json(err);
   }
   
-  
 });
 
 
 // update a category by its `id` value
 router.put('/:id', async (req, res) => {
 
-  // try {
-  //   const updateCat = await Category.update(req.body, {
-  //   where: {
-  //     id: req.params.id,
-  //   },
-  //   category_name = req.body.category_name
-  //   // Category.save()
-  // })
-  // res.status(200).json(updateCat);
-  // } catch (err) {
-  //   res.status(400).json(err);
-  // }
+  try {
+    const updateCat = await Category.update(req.body, {
+    where: {
+      id: req.params.id,
+    },
+    category_name: req.body.category_name
+    // Category.save()
+  })
+  res.status(200).json(updateCat);
+  } catch (err) {
+    res.status(400).json(err);
+  }
 
 });
 
