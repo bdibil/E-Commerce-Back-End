@@ -9,8 +9,6 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)  ![GitHub](https://img.shields.io/github/license/bdibil/E-Commerce-Back-End)
-- [Contributing](#contributing)
-- [Tests](#Tests)
 - [Questions](#Questions)
 
 ## Installation  
